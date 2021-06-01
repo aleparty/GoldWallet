@@ -7595,6 +7595,11 @@ mem@^4.0.0:
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
 
+memoize-one@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
+
 merge-stream@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-1.0.1.tgz#4041202d508a342ba00174008df0c251b8c135e1"
@@ -9249,18 +9254,20 @@ react-native-bootsplash@^2.2.7:
     jimp "0.14.0"
     prompts "2.3.2"
 
-react-native-calendars@^1.265.0:
-  version "1.1129.0"
-  resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.1129.0.tgz#871fcb20af98507f77ac687365f0473d7357e274"
-  integrity sha512-F5z8v/oWshtqyuZC+enBADuo/pETZNO/acX3TKcp4j4fU043Mh804tqJWw61y6eU+N4e8Z8r0GRqvUd42XCgQA==
+react-native-calendars@^1.1260.0:
+  version "1.1262.0"
+  resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.1262.0.tgz#bb6ac91995a7102dacae4375859bee8cb8bb90a6"
+  integrity sha512-6E45gVOHh8LHCTsnH5YgwOB4/B7H6o/JZ8QHBrPJiq1/3hFOUR2O2QCjVdmo7QAl2OmCcWLdjgrJrTqSebjiVA==
   dependencies:
     hoist-non-react-statics "^3.3.1"
     immutable "^4.0.0-rc.12"
     lodash "^4.17.15"
-    moment "^2.24.0"
+    memoize-one "^5.2.1"
     prop-types "^15.5.10"
     react-native-swipe-gestures "^1.0.5"
     xdate "^0.8.0"
+  optionalDependencies:
+    moment "^2.24.0"
 
 react-native-camera@^3.33.0:
   version "3.42.0"
